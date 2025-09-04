@@ -63,7 +63,7 @@
     };
 
     default_transform: matrix_transform {
-        compatibe = "zmk,matrix-transform";
+        compatible = "zmk,matrix-transform";
         rows = <5>;
         columns = <15>;
 
