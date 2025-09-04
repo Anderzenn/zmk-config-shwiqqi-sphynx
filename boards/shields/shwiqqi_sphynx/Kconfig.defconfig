@@ -1,0 +1,6 @@
+if SHIELD_SHWIQQI_SPHYNX
+
+config ZMK_KEYBOARD_NAME
+    default "Shwiqqi Sphynx"
+
+endif
