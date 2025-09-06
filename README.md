@@ -1,0 +1,1 @@
+[![Build ZMK firmware](https://github.com/Anderzenn/zmk-config-shwiqqi-sphynx/actions/workflows/build.yml/badge.svg)](https://github.com/Anderzenn/zmk-config-shwiqqi-sphynx/actions/workflows/build.yml)
