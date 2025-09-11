@@ -17,7 +17,7 @@
         clock-frequency = <I2C_BITRATE_STANDARD>;
 
         pcf8574: gpio-expander@20 {
-            compatible = "nxp,pcf8574t";
+            compatible = "nxp,pcf8574";
             reg = <0x20>;
             #gpio-cells = <2>;
             gpio-controller;
