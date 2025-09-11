@@ -54,7 +54,7 @@
 };
 
 &pinctrl {
-    i2c0_default: i2c0_default {
+    i2c1_default: i2c1_default {
         group1 {
             psels = <NRF_PSEL(TWIM_SCL, 0, 31)>,
                     <NRF_PSEL(TWIM_SDA, 0, 29)>;
@@ -63,7 +63,7 @@
 };
 
 &i2c0 {
-        pinctrl-0 = <&i2c0_default>;
+        pinctrl-0 = <&i2c1_default>;
         pinctrl-names = "default", "sleep";
         status = "okay";
         clock-frequency = <I2C_BITRATE_STANDARD>;
