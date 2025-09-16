@@ -58,22 +58,22 @@
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 20)>,
                     <NRF_PSEL(TWIM_SCL, 0, 21)>;
-        }
-    }
-}
-
-&i2c0 {
-        status = "okay";
-        pinctrl-0 = <&i2c0_default>;
-        pinctrl-names = "default", "sleep";
-        clock-frequency = <I2C_BITRATE_STANDARD>;
-
-        exp: pcf8574@20 {
-            compatible = "nxp,pcf8574";
-            reg = <0x20>;
-            gpio-controller;
-            #gpio-cells = <2>;
-            ngpios = <8>;
-            status = "okay";
         };
     };
+};
+
+&i2c0 {
+    status = "okay";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+
+    exp: pcf8574@20 {
+        compatible = "nxp,pcf8574";
+        reg = <0x20>;
+        gpio-controller;
+        #gpio-cells = <2>;
+        ngpios = <8>;
+        status = "okay";
+    };
+};
