@@ -62,4 +62,4 @@
         ngpios = <8>;
         status = "okay";
     };
-}
+};
