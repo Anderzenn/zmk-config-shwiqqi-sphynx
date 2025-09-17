@@ -54,9 +54,9 @@
 };
 
 &i2c0 {
-    exp: pcf8574@38 {
+    exp: pcf8574@20 {
         compatible = "nxp,pcf8574";
-        reg = <0x38>;
+        reg = <0x20>;
         gpio-controller;
         #gpio-cells = <2>;
         ngpios = <8>;
