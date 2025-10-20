@@ -57,7 +57,7 @@
 &i2c1 {
     status = "okay";
     mcp: mcp23017@20 {
-        compatible = "microchip,mcp23017";
+        compatible = "microchip,mcp230xx";
         status = "okay";
         gpio-controller;
         reg = <0x20>;
