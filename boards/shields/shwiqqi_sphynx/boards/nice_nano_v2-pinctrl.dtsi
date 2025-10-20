@@ -1,17 +1,16 @@
 &pinctrl {
-    i2c0_default: i2c0_default {
+    status = "okay";
+    i2c2_default: i2c1_default {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 29)>,
                     <NRF_PSEL(TWIM_SCL, 0, 31)>;
-            bias-pull-up;
         };
     };
 
-    i2c0_sleep: i2c0_sleep {
+    i2c2_sleep: i2c1_sleep {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 29)>,
                     <NRF_PSEL(TWIM_SCL, 0, 31)>;
-            bias-pull-up;
             low-power-enable;
         };
     };

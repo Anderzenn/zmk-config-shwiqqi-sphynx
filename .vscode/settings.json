@@ -1,0 +1,7 @@
+{
+    "devicetree.zephyr": {
+        "$mid": 1,
+        "path": "/home/anderzenn/zmk/zephyr",
+        "scheme": "file"
+    }
+}
