@@ -64,7 +64,7 @@
         label = "MCP23017";
         #gpio-cells = <2>;
         ngpios = <16>;
-        int-gpios = <&pro_micro 2 GPIO_ACTIVE_LOW>;
+        int-gpios = <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
     };
 };
