@@ -54,7 +54,7 @@
 
 };
 
-&i2c2 {
+&i2c1 {
     status = "okay";
     mcp: mcp23017@20 {
         compatible = "microchip,mcp23017";
