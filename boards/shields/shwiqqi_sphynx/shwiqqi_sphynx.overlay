@@ -35,13 +35,13 @@
             , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; /* ROW 4 */
 
         col-gpios
-            = <&mcp 8 GPIO_ACTIVE_HIGH>    /* COL 0 */
-            , <&mcp 9 GPIO_ACTIVE_HIGH>    /* COL 1 */
-            , <&mcp 10 GPIO_ACTIVE_HIGH>    /* COL 2 */
-            , <&mcp 11 GPIO_ACTIVE_HIGH>    /* COL 3 */
-            , <&mcp 12 GPIO_ACTIVE_HIGH>    /* COL 4 */
-            , <&mcp 13 GPIO_ACTIVE_HIGH>    /* COL 5 */
-            , <&mcp 14 GPIO_ACTIVE_HIGH>    /* COL 6 */
+            = <&mcp 8 GPIO_ACTIVE_LOW>    /* COL 0 */
+            , <&mcp 9 GPIO_ACTIVE_LOW>    /* COL 1 */
+            , <&mcp 10 GPIO_ACTIVE_LOW>    /* COL 2 */
+            , <&mcp 11 GPIO_ACTIVE_LOW>    /* COL 3 */
+            , <&mcp 12 GPIO_ACTIVE_LOW>    /* COL 4 */
+            , <&mcp 13 GPIO_ACTIVE_LOW>    /* COL 5 */
+            , <&mcp 14 GPIO_ACTIVE_LOW>    /* COL 6 */
             , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* COL 7 */
             , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* COL 8 */
             , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   /* COL 9 */
