@@ -7,6 +7,22 @@
 #define BT_LAYER 2
 
 / {
+    macros {
+        rctrl_rshift: rctrl_rshift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+
+            bindings 
+                    = <&macro_press &kp RCTRL &kp RSHFT>
+                    , <&macro_pause_for_release>
+                    , <&macro_release &kp RCTRL &kp RSHFT>
+                    ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -30,7 +46,7 @@
                 &mo BT_LAYER &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp INS &kp DEL
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &rctrl_rshift &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
